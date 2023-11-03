@@ -146,7 +146,10 @@
           <template v-slot:no-option v-if="!fieldProps.hideDropdownIcon">
             <slot name="before-options"/>
             <q-item>
-              <q-item-section class="text-grey">
+              <q-item-section class="text-grey" v-if="field.loadOptions.filterByQuery">
+                {{ fieldProps.hint}}
+              </q-item-section>
+              <q-item-section class="text-grey" v-else>
                 {{ $tr('isite.cms.message.notFound') }}
               </q-item-section>
             </q-item>
@@ -167,12 +170,12 @@
                 <div :class="{'tw-flex': field.props.selectColor }">
                   <div v-if="field.props.selectColor">
                     <div
-                      class="
+                        class="
                         tw-h-4
                         tw-w-4
                         tw-rounded-full
                         tw-py-3"
-                      :class="badgeColor(field, scope)"
+                        :class="badgeColor(field, scope)"
                     />
                   </div>
                   <div :class="{'tw-px-4' : field.props.selectColor }">
@@ -344,11 +347,16 @@
         </div>
         <!-- Expression -->
         <expressionField
-          v-if="loadField('expression')"
+            v-if="loadField('expression')"
+            v-model="responseValue"
+            :fieldProps="fieldProps"
+            :options="formatOptions"
+            :class="`${field.help ? 'expression-dinamyc-field' : ''}`"
+        />
+        <localizedPhone 
+          v-if="loadField('localizedPhone')"
           v-model="responseValue"
           :fieldProps="fieldProps"
-          :options="formatOptions"
-          :class="`${field.help ? 'expression-dinamyc-field' : ''}`"
         />
         <!--Code Editor-->
         <q-field v-model="responseValue" v-if="loadField('code')"
@@ -386,6 +394,7 @@ import selectMedia from '@imagina/qmedia/_components/selectMedia'
 import googleMapMarker from '@imagina/qsite/_components/master/googleMapMarker'
 import JsonEditorVue from 'json-editor-vue'
 import expressionField from '@imagina/qsite/_components/master/expressionField/index.vue';
+import localizedPhone from '@imagina/qsite/_components/master/localizedPhone/index.vue';
 //Code mirror
 import {codemirror} from 'vue-codemirror'
 import 'codemirror/lib/codemirror.css'
@@ -395,7 +404,7 @@ import 'codemirror/mode/javascript/javascript.js'
 import 'codemirror/mode/htmlembedded/htmlembedded.js'
 import 'codemirror/mode/php/php.js'
 import 'codemirror/theme/base16-dark.css'
-import'codemirror/addon/selection/active-line.js'
+import 'codemirror/addon/selection/active-line.js'
 
 export default {
   name: 'dynamicField',
@@ -432,7 +441,8 @@ export default {
     googleMapMarker,
     JsonEditorVue,
     expressionField,
-    codemirror
+    codemirror,
+    localizedPhone
   },
   watch: {
     value: {
@@ -1224,8 +1234,8 @@ export default {
     badgeColor() {
       return (field, scope) => {
         return field.props.colorType === 'tailwindcss'
-          ? `tw-bg-${scope.opt.color || scope.opt.value}`
-          : `bg-${scope.opt.color || scope.opt.value}`
+            ? `tw-bg-${scope.opt.color || scope.opt.value}`
+            : `bg-${scope.opt.color || scope.opt.value}`
       }
     }
   },
@@ -1252,7 +1262,7 @@ export default {
             this.responseValue = []
             //Get filter options
             let filterField = (crudProps.config && crudProps.config.options) ?
-              crudProps.config.options : {label: 'title', value: 'id'}
+                crudProps.config.options : {label: 'title', value: 'id'}
             //if value is array, get id option
             if (propValue && Array.isArray(propValue)) {
               propValue.forEach(item => {
@@ -1415,8 +1425,8 @@ export default {
             //Format response
             response.data = response.data.map((item, index) => ({...item, id: item.id || (index + 1)}))
             formatedOptions = ['select', 'expression'].includes(this.field.type) ?
-              this.$array.select(response.data, loadOptions.select || fieldSelect) :
-              this.$array.tree(response.data, loadOptions.select || fieldSelect)
+                this.$array.select(response.data, loadOptions.select || fieldSelect) :
+                this.$array.tree(response.data, loadOptions.select || fieldSelect)
 
             //Assign options
             this.rootOptions = this.$clone(defaultOptions.concat(formatedOptions))
@@ -1547,6 +1557,15 @@ export default {
         })
       }
 
+      //Hint message for filterByQuery
+      if ( loadOptions && loadOptions.filterByQuery){
+        if(val.length > 2){
+          if(!this.rootOptions.length){
+            this.fieldProps.hint = `${this.$tr('isite.cms.message.notFound')}`
+          }
+        }
+      }
+
       //Emit filter Value
       this.$emit("filter", val)
     },
@@ -1559,7 +1578,7 @@ export default {
           let responseValueTmp = (this.responseValue || [])
           responseValueTmp = Array.isArray(responseValueTmp) ? responseValueTmp : [responseValueTmp]
           const includeAll = responseValueTmp.every(val =>
-            this.rootOptions.map(val => (val.value || val.id).toString()).includes(val.toString())
+              this.rootOptions.map(val => (val.value || val.id).toString()).includes(val.toString())
           )
           //Validate if there is the option for the value
           if (loadOptions.filterByQuery && !includeAll) {
@@ -1596,9 +1615,8 @@ export default {
 <style lang="stylus">
 #dynamicFieldComponent
 
-  .q-field--outlined .q-field__control{
+  .q-field--outlined .q-field__control {
     padding-letf 12px
-    padding-right 40px
   }
 
   .expression-dinamyc-field {
@@ -1656,4 +1674,19 @@ export default {
 
 #ckEditorComponent
   width 100%
+
+// help padding-right
+.crud-dynamic-field,
+.input-dynamic-field,
+.search-dynamic-field,
+.date-dynamic-field,
+.hour-dynamic-field,
+.full-date-dynamic-field,
+.select-dynamic-field,
+.treeselect-dynamic-field,
+.input-color-dynamic-field,
+.select-icon-dinamyc-field
+  .q-field__control{
+    padding-right 40px
+}
 </style>

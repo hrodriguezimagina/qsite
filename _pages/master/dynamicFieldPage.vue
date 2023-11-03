@@ -100,7 +100,8 @@ export default {
           },
           loadOptions: {
             apiRoute: 'apiRoutes.quser.users',
-            select: {label: 'fullName', id: 'id'}
+            select: {label: 'fullName', id: 'id'},
+            filterByQuery: true
           }
         },
         treeSelect: {
@@ -221,6 +222,14 @@ export default {
               mode : 'text/css'
             }
           }
+        },
+        localizedPhone: {
+          ...globalData,
+          type: 'localizedPhone',
+          props: {
+            label: 'type: localizedPhone',
+            mask:"###-###-####"
+          },
         },
       }
     }
