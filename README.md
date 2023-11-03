@@ -1,5 +1,5 @@
 # QSITE  | 1.0.0
-root component of the app, where all global subcomponents are located
+root component of the app, where all global subcomponents are located +changes
 
 # Installation
 ```bash
