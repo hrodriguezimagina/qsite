@@ -1,18 +1,7 @@
-# QSITE  | 1.0.2
+# QSITE  | 1.0.6
 root component of the app, where all global subcomponents are located 
 
-# Installation
-```bash
-npm i @imagina/qsite@1.0.0
-```
-
-# Usage
-In this root component, there are several global sub components such as tables and dynamic forms, graphics among others
-
-## Charts component
-
-displays the following graphs. 
-**line chart, bar chart, pie chart, and donut chart**.
+*line chart, bar chart, pie chart, and donut chart**.
 
 ### Usage 
 each graph must send these three values ​​by props.
