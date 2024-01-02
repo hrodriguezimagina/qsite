@@ -1,9 +1,26 @@
 <template>
   <div id="testPageId">
-    tes page...
+      <p> getName() : {{ store.getName() }}</p>  
+
+  <p> function with params : {{ store.getFullName({lastname: 'rodriguez', separator: '//'}) }}</p>  
+
+    <q-btn  @click="add()">
+      +1 
+    </q-btn>
+    <q-btn  @click="store.reset()">
+      reset 
+    </q-btn>
+    {{ store.state }}
+    {{ store.getCount() }}
+    {{ store.add(2) }}
+
   </div>
 </template>
 <script>
+
+import store from './store';
+import { reactive, ref , watch} from 'vue'
+
 
 export default {
   props: {},
@@ -16,13 +33,18 @@ export default {
   data() {
     return {
       loading: false,
-      data: []
+      data: [], 
+      store
     }
   },
   computed: {},
   methods: {
-    init() {
-    },
+    init() {},
+    add(){
+      store.count = store.count + 1      
+      store.user.name = 'siuu'
+
+    }
   }
 }
 </script>
