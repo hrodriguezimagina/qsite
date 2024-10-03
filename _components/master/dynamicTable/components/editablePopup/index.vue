@@ -27,12 +27,10 @@
           v-if="isSelectField"
           v-model="scope.value.id"
           :field="dynamicField"
-          :enableCache="true"
         />
         <dynamic-field v-else
                        v-model="scope.value"
                        :field="dynamicField"
-                       :enableCache="true"
         />
         <div class="justify-end row q-gutter-sm">
           <q-btn

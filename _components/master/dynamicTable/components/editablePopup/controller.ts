@@ -25,7 +25,9 @@ export default function controller(props, emit) {
       return { name: props.col.name, maxWidth: '300px', ...field };
     }),
     maxWidth: computed(() => computeds.dynamicField?.value.maxWidth ?? ''),
-    isSelectField: computed(() => computeds.dynamicField.value.type == 'select')
+    isSelectField: computed(() => {
+      return computeds.dynamicField.value.type == 'select' && !computeds.dynamicField.value.props?.multiple
+    })
   };
 
   // Methods
