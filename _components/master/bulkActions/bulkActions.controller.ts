@@ -14,7 +14,7 @@ import {
     Message, 
     Filters 
 } from './models/interfaces'
-import { constants } from './models/defaultModels/constants'
+import { constants, initialPagination } from './models/defaultModels/constants'
 import { prepareMessageObject } from './helpers'
 import { sendReport, getDataLog, getConfig } from './services'
 import { helper, i18n, store, eventBus } from 'src/plugins/utils'
@@ -31,6 +31,8 @@ export const bulkActionsController = (props, { expose, emit }) => {
     const messages = ref<Message[] | []>([])
     const log = ref([])
     const route = useRoute()
+    const token = ref('')
+    const path = ref('')
 
     const { dynamicFilterValues, dynamicFilterSummary } = toRefs(props)
 
@@ -40,10 +42,23 @@ export const bulkActionsController = (props, { expose, emit }) => {
     const { 
         status, 
         columns, 
-        initialPagination, 
         typesOfMessages,
-        fieldMassiveActions
+        fieldMassiveActions,
     } = constants()
+
+    const pagination = ref({
+        ...initialPagination,
+    })
+
+    const helpText = computed(() => {
+        return {
+            title: 'Bulk Actions',
+            description: `
+                Need help? See the documentation for more information on Bulk actions.
+                ${helper.documentationLink(`/docs/agione/bulk-actions`, token.value)}
+            `,
+        }
+    })
 
     const filterAndSortBulkActions = (bulkActions: BulkActions[]) => {
         if (!bulkActions) return []
@@ -58,6 +73,15 @@ export const bulkActionsController = (props, { expose, emit }) => {
                 value: option.name,
                 apiRoute: option.apiRoute,
                 fields: option?.fields,
+                ...(option?.help && {
+                    help: {
+                        title: option?.title,
+                        description: `
+                            ${option?.help?.description}
+                            ${helper.documentationLink(option?.help?.url, token.value, false)}
+                        `,
+                    }
+                })
             }))
     }
 
@@ -69,8 +93,17 @@ export const bulkActionsController = (props, { expose, emit }) => {
         bulkActions.value = filterAndSortBulkActions(data)
     }
 
-    const fetchDataLog = async () => {
-        const data = await getDataLog(status, permission)
+    const fetchDataLog = async ({ page=1 } = {}) => {
+        const response = await getDataLog(permission, page)
+        if (response?.meta) {
+			const total = response.meta.page.total
+			const pagesNumber = Math.ceil(total / pagination.value.rowsPerPage)
+			pagination.value.pagesNumber = pagesNumber
+		}
+        const data = response?.data
+        data.map(item => {
+            item.icon = status[item.statusId].icon;
+        })
         log.value = data;
     }
 
@@ -153,6 +186,7 @@ export const bulkActionsController = (props, { expose, emit }) => {
     onMounted(() => {
         nextTick(async () => {
             await init()
+            token.value = await helper.getToken()
         })
     })
 
@@ -185,7 +219,8 @@ export const bulkActionsController = (props, { expose, emit }) => {
             props: {
                 ...fieldMassiveActions.props,
                 options: bulkActions.value,
-            }
+            },
+            help: selectedAction.value?.help
         }
     })
 
@@ -207,18 +242,20 @@ export const bulkActionsController = (props, { expose, emit }) => {
         field,
         log,
         columns,
-        initialPagination,
+        pagination,
         selectedAction,
         optionsForBulkActions,
         optionsForSelectedBulkActions,
         i18n,
         dynamicFilterSummary,
         isDynamicFilterSummary,
+        helpText,
         init,
         newReport,
         showReport,
         reset,
         handleChangeBulkActions,
         updateOptionsBulkActions,
+        fetchDataLog,
     }
 }

@@ -1,7 +1,7 @@
 import baseService from 'modules/qcrud/_services/baseService'
 
 export default {
-  async getConfig(configName: string) {
+  async getConfig(configName: string, byModule?: boolean): Promise<any> {
     try {
       if (!configName) return null
 
@@ -9,7 +9,7 @@ export default {
         refresh: true,
         params: {
           filter: {
-            configName
+            ...(byModule ? { configNameByModule: configName } : { configName }),
           }
         }
       };
@@ -20,7 +20,7 @@ export default {
         console.error(error)
     }
   },
-  async getQuickCardData(apiRoute: string, filters: {}, refresh: boolean = true): Promise<any> {
+  async getQuickCardData(apiRoute: string, filters: {}, refresh: boolean = false): Promise<any> {
     try {
       const requestParams = {
         refresh,
@@ -30,9 +30,8 @@ export default {
           }
         }
       };
-      // const response = await baseService.index(apiRoute, requestParams)
-      // return response.data[0]
-      return {}
+      const response = await baseService.index(apiRoute, requestParams)
+      return response.data
     } catch (error) {
         console.error(error)
     }

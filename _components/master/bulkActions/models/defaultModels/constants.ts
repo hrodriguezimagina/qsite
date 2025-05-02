@@ -1,6 +1,9 @@
 import { i18n } from "src/plugins/utils"
+import { ActionsStatus } from '../interfaces'
 
-const status = () => ({
+export const NUMBER_OF_ROWS = 10
+
+const status = (): ActionsStatus => ({
     1: {
         label: i18n.tr('isite.cms.label.pending'),
         icon: {
@@ -37,6 +40,14 @@ const status = () => ({
         }
     }
 })
+
+export const initialPagination = {
+    sortBy: 'id',
+    descending: true,
+    rowsPerPage: NUMBER_OF_ROWS,
+    pagesNumber: 1,
+    page: 1
+}
 
 export const constants = () => ({
     status: {
@@ -81,11 +92,6 @@ export const constants = () => ({
             style: 'padding-left: 0; width: 20px' 
         },
     ],
-    initialPagination: {
-        sortBy: 'id',
-        descending: true,
-        rowsPerPage: 10
-    },
     typesOfMessages: {
         info: {
             icon: 'fa-solid fa-circle-info',

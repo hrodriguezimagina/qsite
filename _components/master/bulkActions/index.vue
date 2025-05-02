@@ -6,7 +6,8 @@
         :loading="loading"
         :title="modalTitle" 
         @hide="reset()" 
-        @show="init()" 
+        @show="init()"
+        :help="helpText"
         custom-position
     >
         <div v-if="!loading">
@@ -94,7 +95,8 @@
                 <logTable
                     :rows="log"
                     :columns="columns"
-                    :pagination="initialPagination"
+                    :initialPagination="pagination"
+                    @get-data-log="fetchDataLog"
                 />
             </section>
         </div>
