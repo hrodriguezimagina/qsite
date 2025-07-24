@@ -119,6 +119,8 @@ export const GET_SITE_SETTINGS = ({commit, dispatch, state, getters}, params = {
 //Request the centralized brand settings
 export const GET_CENTRALIZED_BRAND = ({state}, siteSettings) => {
   return new Promise(resolve => {
+    resolve([])
+    return
     //Search the centralized brand setting
     const centralizedBrand = siteSettings.find(item => item.name === 'isite::centralizedBrand');
     //Validate if exist the setting
@@ -168,7 +170,7 @@ export const SET_SITE_COLORS = ({state, commit, dispatch}) => {
 export const SET_LOCALE = ({commit, dispatch, state}, params = {}) => {
   return new Promise(async resolve => {
     params = {locale: false, vue: false, ssrContext: false, ...params}
-    let locale = params.locale
+    let locale = params.locale 
     let currentLocale = locale
     let Vue = params.vue
 
@@ -183,6 +185,7 @@ export const SET_LOCALE = ({commit, dispatch, state}, params = {}) => {
     if(!state.selectedLocales.includes(locale)){
       locale = state.defaultLocale
     }
+    if(locale) locale = 'es'
     //Set in storage
     await cache.set('site.default.locale', locale)
 
@@ -194,7 +197,8 @@ export const SET_LOCALE = ({commit, dispatch, state}, params = {}) => {
     axios.defaults.params.setting.locale = locale
 
     //Set default language to Quasar
-    locale = (locale == 'en') ? 'en-US' : locale.toLowerCase()
+    //locale = (locale == 'en') ? 'en-US' : locale.toLowerCase()
+    locale = 'es'
     import(`quasar/lang/${locale}`).then(lang => {
       if (params.ssrContext) Quasar.lang.set(lang.default, params.ssrContext)
       else Quasar.lang.set(lang.default)
@@ -256,13 +260,15 @@ export const GET_MODULE_CONFIGS = ({commit, dispatch, state}, params = {}) => {
       params: {filter: {configNameByModule: 'config'}}
     }
     //Request
-    crud.index('apiRoutes.qsite.configs', requestParams).then(async response => {
+    //crud.index('apiRoutes.qsite.configs', requestParams).then(async response => {
+      //commit('SET_MODULE_CONFIGS', response.data)
+      const response = {data: []}
       commit('SET_MODULE_CONFIGS', response.data)
       resolve(true)
-    }).catch(error => {
-      console.error('[store-qsite]Error:: Store getting site hooks - ', error)
-      reject(error)
-    })
+    //}).catch(error => {
+      //console.error('[store-qsite]Error:: Store getting site hooks - ', error)
+      //reject(error)
+    //})
   })
 }
 
@@ -277,32 +283,34 @@ export const GET_SITE_HOOKS = ({commit, dispatch, state}, params = {}) => {
       params: {filter: {configNameByModule: 'config.frontendHooks'}}
     }
     //Request
-    crud.index('apiRoutes.qsite.configs', requestParams).then(async response => {
+    //crud.index('apiRoutes.qsite.configs', requestParams).then(async response => {
+      const response = {data: []}
       commit('SET_SITE_HOOKS', response.data)
       resolve(true)
-    }).catch(error => {
-      console.error('[store-qsite]Error:: Store getting site hooks - ', error)
-      reject(error)
-    })
+    //}).catch(error => {
+      //console.error('[store-qsite]Error:: Store getting site hooks - ', error)
+      //reject(error)
+    //})
   })
 }
 
 //Get site hooks
 export const LOAD_CLARITY = ({commit, dispatch, state}) => {
   return new Promise((resolve, reject) => {
+    resolve(true)
     //Request params
     let requestParams = {
       refresh: true,
       params: {filter: {configName: 'isite.config.msClarityScript'}}
     }
     //Request
-    crud.index('apiRoutes.qsite.configs', requestParams).then(async response => {
-      if (response.data) helper.appendScriptStringHead(response.data)
-      resolve(true)
-    }).catch(error => {
-      console.error('[store-qsite]Error:: Store getting site hooks - ', error)
-      reject(error)
-    })
+    //crud.index('apiRoutes.qsite.configs', requestParams).then(async response => {
+      //if (response.data) helper.appendScriptStringHead(response.data)
+      //resolve(true)
+    //}).catch(error => {
+      //console.error('[store-qsite]Error:: Store getting site hooks - ', error)
+      //reject(error)
+    //})
   })
 }
 

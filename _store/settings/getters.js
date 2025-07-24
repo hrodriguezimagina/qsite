@@ -75,7 +75,12 @@ export const getSettingMediaByName = (state) => (filter) => {
 
 export const getSelectedLocalesSelect = (state) => {
   //Get labels formselected locales
-  let languages = state.availableLocales.filter(item => state.selectedLocales.indexOf(item.iso) >= 0)
+  //let languages = state.availableLocales.filter(item => state.selectedLocales.indexOf(item.iso) >= 0)
+  let languages = {
+    iso: 1,
+    name: 'es',
+    label: 'es'
+  }
   let selectLanguages = array.select(languages, {label : 'name', id : 'iso'})
   selectLanguages.forEach((item,index) => {
     selectLanguages[index].label += ` (${item.value})`

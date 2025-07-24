@@ -8,7 +8,7 @@ export default {
   settings: `${urlBase}/settings`,
   configs: `${urlBase}/configs`,
   appVersion: `${urlBase}/site/version`,
-  siteSettings: `${urlBase}/site/settings`,
+  siteSettings: `/isetting/v1/settings`,
   permissions: `${urlBase}/site/permissions`,
   cacheClear: `${urlBase}/site/cache-clear`,
   export: `${urlBase}/export`,

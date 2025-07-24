@@ -8,8 +8,14 @@ export const GET_SITE_SETTINGS = ({commit, dispatch, state}) => {
   return new Promise((resolve, reject) => {
     let params = {refresh: true}
     let configName = 'apiRoutes.qsite.siteSettings'
-    crud.index(configName, params).then(async response => {
-      let data = response.data
+    const dummyData = {
+      siteSettings: [],
+      availableLocales: [],
+      defaultLocale: 'es'
+    }
+    //crud.index(configName, params).then(async response => {
+      //let data = response.data 
+      let data = dummyData  
       commit('SET_SITE_SETTINGS', data.siteSettings)
       commit('SET_AVAILABLE_LOCALES', data.availableLocales)
       commit('SET_AVAILABLE_THEMES', data.availableThemes)
@@ -17,10 +23,10 @@ export const GET_SITE_SETTINGS = ({commit, dispatch, state}) => {
       commit('SET_SELECTED_LOCALES')
 
       resolve(true)
-    }).catch(error => {
-      console.error('Error Store getting site settings', error)
-      reject(error)
-    })
+    //}).catch(error => {
+    //  console.error('Error Store getting site settings', error)
+    //  reject(error)
+    //})
   })
 }
 
