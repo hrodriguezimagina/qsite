@@ -106,11 +106,13 @@
         </div>
 
         <!--Departments-->
+        
+
         <label class="block text-grey-8" style="line-height: 1.4">
           {{
-            quserState.userData.departments.map(department => {
-              return department.title
-            }).join(', ')
+            quserState.userData?.departments.map(department => {
+              return department?.title || ''
+            }).join(', ') || ''
           }}
         </label>
       </div>

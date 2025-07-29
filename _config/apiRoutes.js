@@ -6,9 +6,16 @@ export default {
   urlBase: urlBase,
   version: moduleVersion,
   settings: `${urlBase}/settings`,
-  configs: `${urlBase}/configs`,
+  
+  //configs: `${urlBase}/configs`,
+  configs: `/isetting/v1/settings/configs/get`,
+
+
   appVersion: `${urlBase}/site/version`,
-  siteSettings: `${urlBase}/site/settings`,
+  
+  //siteSettings: `${urlBase}/site/settings`,
+  siteSettings: `/isetting/v1/settings`,
+  
   permissions: `${urlBase}/site/permissions`,
   cacheClear: `${urlBase}/site/cache-clear`,
   export: `${urlBase}/export`,
