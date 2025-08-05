@@ -12,11 +12,7 @@
           "noMessages": "There isn't messages..."
         },
         "newProvider": "New Provider",
-        "updateProvider": "Update Provider",
-        "label": {
-          "resend": "Resend",
-          "sendMessage": "Send a Message..."
-        }
+        "updateProvider": "Update Provider"
       }
     },
     "ievent": {
@@ -40,8 +36,7 @@
           "adminConfig": {
             "title": "Setting",
             "headerTitle": "Notifications setting"
-          },
-          "adminPanel": "Notifications"
+          }
         },
         "title": "Multimedia List/Search",
         "newFile": "New File",
@@ -68,20 +63,7 @@
           "messageLimitFiles": "The file limit is <b>{quantity}</b>. to select another file you must first remove some of the selected ones",
           "failedUploadFiles": "Error uploading files",
           "errorMaxFileSize": "Files exceed the allowed size of {size}MB"
-        },
-        "markAsRead": "Mark as read",
-        "markAllAsRead": "Mark all as read",
-        "tab": {
-          "all": "All",
-          "unread": "Unread",
-          "read": "Read"
-        },
-        "type": "Type",
-        "cancel": "Cancel",
-        "openLink": "Open link",
-        "helpTextBroadcastOption": "This notification will be displayed within the APP",
-        "isImportant": "BroadCast (Important)",
-        "isImportantHelpText": "This notification will be displayed in a more visible popup in the center of the APP"
+        }
       }
     },
     "menu": {
@@ -341,8 +323,7 @@
         "updateCategory": "Update Category",
         "label": {
           "tourElement": "Element Id",
-          "tourElementPosition": "Element Position",
-          "categoryView": "Category view"
+          "tourElementPosition": "Element Position"
         },
         "activities": {
           "repeatAction": "Tour",
@@ -359,18 +340,8 @@
           "adminLead": "List Lead",
           "designForm": "Design Form"
         },
-        "label": {
-          "parentForm": "Parent form",
-          "childForms": "Child Forms",
-          "dragFieldsHere": "Drag the fields here",
-          "addNewBlock": "Add a new block",
-          "emptyBlock": "Empty block",
-          "editForm": "Edit form.",
-          "openParentForm": "Open parent form"
-        },
         "newForm": "New Form",
         "updateForm": "Update Form",
-        "fillForm": "Fill Form",
         "newField": "New Field",
         "updateField": "Update Field",
         "newBlock": "new Block",
@@ -395,18 +366,10 @@
             "full": "Full Width"
           },
           "successText": "Success text",
-          "submitText": "Submit button text"
+          "submitText": "Submit text"
         },
         "message": {
-          "helpToOptionsField": "Type the option and press enter...",
-          "tooltipInfoFormParent": "The child forms are forms that are created from other forms (parent forms). The child form can have as many fields as the parent form, but new fields cannot be created within the child form.",
-          "descriptionChildrenForm": "Drag the fields you want from left to right to add them to the form blocks.",
-          "descriptionParentForm": "Here you can edit the blocks and fields of the form. You can also edit specific form information from here.",
-          "fieldEditingModalbanner": "Here, you can edit the field, but with certain values restricted because it's an inherited field. The values you see locked must match how they are defined in the parent form. If you wish to edit these fields, go to the parent form and edit them there, and all child fields will automatically update."
-        },
-        "feedBack": {
-          "newForm": "Fill another Form",
-          "message": "¡Done!, Your Form has been successfully sent!"
+          "helpToOptionsField": "Type the option and press enter..."
         }
       }
     },
@@ -702,8 +665,7 @@
           "decimal_place": "Decimal",
           "value": "Value",
           "status": "Status",
-          "default_currency": "Default Currency",
-          "warehouses": "Warehouses"
+          "default_currency": "Default Currency"
         },
         "newProduct": "New Product",
         "updateProduct": "Update Product",
@@ -752,8 +714,6 @@
         "subtotal": "Subtotal",
         "shipping": "Shipping",
         "orderHistory": "Order History",
-        "newWarehouse": "New Warehouse",
-        "updateWarehouse": "Edit Warehouse",
         "form": {
           "formContent": "Here you can find the information related to the name, slug, summary and description.",
           "statusContent": "Here you can change the status of your product.",
@@ -849,14 +809,7 @@
           "symbolLeft": "Símbolo Izquierdo",
           "symbolRight": "Símbolo Derecho",
           "running": "Activo",
-          "finished": "Finalizado",
-          "mapHelp": "Search for the address or locate the warehouse on the map.",
-          "productWarehouse": "Warehouses",
-          "productWarehouseContent": "Select the different warehouses where your product is located.",
-          "generalWarehouse": "General warehouse",
-          "generalWarehouseHelp": "You can efficiently manage detailed information for each product, segmented according to the different warehouses. This way, you can organize and centrally manage specific data for your products at each location, simplifying inventory management and optimizing your operational control.",
-          "warehouseByOptions": "Warehouse by options",
-          "warehouseByOptionsHelp": "We provide you with the ability to efficiently manage detailed information for each product option, organized according to different warehouses. This allows you to centralize the management of specific data for each variant at each location, simplifying inventory administration and optimizing operational control effectively."
+          "finished": "Finalizado"
         },
         "message": {
           "warnAddOpt": "To add options, you must first create the product",
@@ -865,7 +818,7 @@
           "selectProduct": "Select a product option",
           "warnAddDiscount": "To add discounts, you must first create the product",
           "viewProduct": "View product",
-          "advanceEdit": "Go to advanced Form",
+          "advanceEdit": "Advanced Edit",
           "quickEdit": "Quick Edit",
           "btnAddProduct": "Add Product",
           "chooseProduct": "Choose Product",
@@ -980,7 +933,6 @@
           "confirmPassword": "Confirm password",
           "changePassword": "Change Password",
           "profile": "Profile | Profiles",
-          "profilePicture": "Profile Picture",
           "myProfile": "My profile | My profiles",
           "userGroup": "User Group | User Groups",
           "registerAs": "Register as",
@@ -991,14 +943,7 @@
           "lastLogin": "Last login",
           "defaultAddress": "Default address",
           "documentType": "Document type",
-          "documentnumber": "Document number",
-          "emailLogin": "Continue With Email",
-          "sendEmailToVerify": "We have sent an email to <b>{email}</b> where you will find a secure link to access. Please check your inbox to access securely.",
-          "introMessage": "Enter your email, and we'll send you a link to connect quickly and securely",
-          "checkYourEmail": "Check your email",
-          "notReceivedEmail": "Have you not received the email?",
-          "checkYourSpamFolder": "Check your spam folder.",
-          "resendEmail": "Resend email"
+          "documentnumber": "Document number"
         },
         "message": {
           "emailExist": "Email already exist",
@@ -1074,8 +1019,7 @@
           "writeComment": "Write a comment..."
         },
         "newRule": "New Rule",
-        "updateRule": "Update Rule",
-        "newRequestedBy": "New Contact"
+        "updateRule": "Update Rule"
       }
     },
     "page": {
@@ -1249,8 +1193,7 @@
           "customers": "Customers",
           "costCenters": "Cost Centers",
           "gates": "Parking Spots",
-          "areas": "Areas",
-          "contracts": "Contracts"
+          "areas": "Areas"
         },
         "message": {}
       }
@@ -1269,17 +1212,13 @@
         "identifyYourReport": "Identify your report",
         "selectColumnsFilters": "Select columns and filters",
         "selectSortColumns": "Select and sort columns",
-        "selectColumns": "Select the Columns",
-        "dragColumns": "Drag and reorder the columns",
         "moveColumn": "Move column",
-        "selectFirst": "Select the filters",
-        "selectFirstSummary": "Choose the firts ({total})* filters you need for this report to use quickly.",
+        "selectFirst": "Select the first {total} filters",
         "detailFilterOptions": "Detail the filter options",
         "selectInfoYouWantToShowForEachFilter": "Select the info you want to show for each filter",
         "chooseColumnSorting": "Choose column sorting",
         "adjustFollowingParameters": "Do you want to schedule it? Adjust the following parameters",
         "sort": "Sort",
-        "addAnotherEmail": "Add another email",
         "message": {
           "selectColumn": "Please select at least one column to continue and a filter",
           "waitMoment": "Wait a moment we are loading your report"
@@ -1299,32 +1238,6 @@
     },
     "isite": {
       "cms": {
-        "crudMySite": {
-          "information": {
-            "title": "Site Information",
-            "description": "In this section, you have the ability to customize the details of your website. Here you can update essential elements such as the name of your site, select the category that best represents it, and write an attractive and precise description. This information is fundamental as it helps visitors understand what your page is about and what they can expect from it."
-          },
-          "socialNetworks": {
-            "title": "Social Networks",
-            "description": "Link your Facebook and Instagram profiles, and provide a WhatsApp number. These connections make it easier for your visitors to interact with you on the platforms they already use, allowing you to build a stronger community around your website."
-          },
-          "media": {
-            "title": "Media Files",
-            "description": "Here you can add a logo for your website, and help your customers easily identify your brand."
-          },
-          "colors": {
-            "title": "Colors",
-            "description": "The color section allows you to personalize the appearance of your website to match your brand. Here you can select two colors that will be used as the main theme of your page. These colors will help establish the visual identity of your site, giving it a unique and consistent look."
-          },
-          "schedule": {
-            "title": "Business Hours",
-            "description": "Here you can set the hours during which your business is operational. This information is essential for your customers, as it lets them know when they can expect services or responses to their inquiries."
-          },
-          "location": {
-            "title": "Location",
-            "description": "Here you have the ability to share your exact location with the visitors of your website. You can enter details such as the province and city, as well as the exact address of your office."
-          }
-        },
         "sidebar": {
           "pageHome": "Home",
           "pageConfig": "Configuration",
@@ -1371,8 +1284,7 @@
           "newExportHelpText": "Export <b class=\"text-blue-grey\">{pageTitle}</b> with current filters (without pagination)",
           "newExportItemHelpText": "Export <b class=\"text-blue-grey\">Record ID: {id}</b>",
           "exportReady": "Your <b>{fileName}</b> report is Ready!",
-          "noOrganization": "You do not belong to an organization",
-          "wantToCreateAChildForm": "¿Do you want to create a child form of"
+          "noOrganization": "You do not belong to an organization"
         },
         "startTime": "Start time",
         "endTime": "End time",
@@ -1382,9 +1294,6 @@
         "perzonalizationTitle": "Welcome to the editor of your website",
         "perzonalizationDescription": "Easily change the logo, colors and the main information of your website",
         "label": {
-          "resposible": "Responsible",
-          "clickToAction": "Click to Action",
-          "informationTitle": "Site Information",
           "top": "Top",
           "bottom": "Bottom",
           "left": "Left",
@@ -1412,8 +1321,6 @@
           "content": "Content",
           "continueWith": "Continue with",
           "facebook": "Facebook",
-          "instagram": "Instagram",
-          "youtube": "Youtube",
           "google": "Google",
           "microsoft": "Microsoft",
           "showing": "Showing",
@@ -1730,31 +1637,15 @@
           "endPoint": "End Point",
           "token": "Token",
           "refreshAtOnce": "Refresh",
-          "refreshEveryMinutes": "Refresh every {min} minutes",
-          "start": "Start",
-          "continueUser": "Continue with this User",
-          "createNewAccount": "Create new account",
-          "continue": "Continue",
-          "plan": "Plan",
-          "analytics": "Analytics",
-          "automationRules": "Automation rules",
-          "copyEmbedHtml": "Copy HTML",
-          "createChildForm": "Create child form",
-          "copy": "Copy",
-          "insert": "Insert",
-          "phoneNumber": "Phone number",
-          "quickLook": "Quick look"
+          "refreshEveryMinutes": "Refresh every {min} minutes"
         },
         "message": {
-          "showDemo": "Demo",
-          "phoneHint": "Enter a phone number and press enter",
           "appOffline": "You have lost connection to the internet. This app is offline.",
           "activitiesDescription": "Select the activity you want",
           "descriptionHelpCenter": "Choose the option you want to solve your doubts",
           "editFormProduct": "In this form you can edit your product in a simple way, if you want to edit your product with more advanced options, click on the following button to go to the advanced form.",
-          "createFormProduct": "Want to see the advanced options?",
+          "createFormProduct": "In this form you can create a new product in a simple way, if you want to create your product with more advanced options, click on the following button to go to the advanced form.",
           "notFound": "Sorry, nothing here",
-          "noResultsFoundTryAnotherSearchValue": "No results found, try another search value...",
           "goToHome": "Go to home",
           "deleteRecord": "Are you sure, you want to delete this record?",
           "formInvalid": "There are missing fields to complete, check the form",
@@ -1815,22 +1706,12 @@
           "finishRegister": "There is little left to finish your registration...",
           "ready": "Ready",
           "noRegistered": "You are not registered yet",
-          "hintFilterByQuery": "Type 2 or more characters to search for options",
+          "hintFilterByQuery": "Type 3 or more characters to search for options",
           "invalidFormat": "Invalid format",
           "specialCharactersAreNotAllowed": "Special characters are not allowed",
-          "configureThisSection": "configure This section",
-          "selectedCategory": "Selected category",
-          "noCategories": "There are no categories",
-          "selectedTemplate": "Selected template",
-          "noTemplates": "No templates",
-          "recordModalTitle": "Congratulations on completing your account registration!",
-          "recordModalMessage": "<p>You've taken the first important step by signing up, and now we're ready to take you through our simple process to customize and create the perfect website that reflects your vision and goals.</p><p>Welcome and go ahead! 👋</p>",
-          "emailInvalid": "Email invalid"
+          "configureThisSection": "configure This section"
         },
         "form": {
-          "whatsappNumber": "Número de Whatsapp",
-          "codeCountry": "Code country",
-          "defaultMessage": "Default message",
           "id": "ID",
           "title": "Title | Title",
           "caption": "Caption | Captions",
@@ -1946,13 +1827,12 @@
           "printName": "Print Name",
           "requestedBy": "Requested By",
           "feature": "Feature | Features",
-          "fieldsDetails": "Fields Details",
-          "warehouse": "Warehouse"
+          "fieldsDetails": "Fields Details"
         },
         "configList": {
           "loggedAs": "logged as",
           "fullScreen": "show in full screen",
-          "signOut": "Sign Out",
+          "signOut": "sign out",
           "leaveImpersonating": "Leave impersonating",
           "clearCache": "Clear cache",
           "goToSite": "Go to site"
@@ -1966,13 +1846,7 @@
         "bottomLeft": "Bottom-Left",
         "bottom": "Bottom",
         "bottomRight": "Bottom-Right",
-        "selectedRows": "{num} selected rows",
-        "reportQueue": "You already have a report in progress, you requested it on <b>{date}</b>. As soon as it is finished we will enable the 'create' function for you... We do this to make the app work much better!",
-        "sessionFound": "There is an active session",
-        "alreadyInUse": "Oops! It looks like the name you've chosen is already in use. Could you please try selecting a different name? We want to make sure your unique identity shines bright!",
-        "usersToNotify": "Users To notify",
-        "emailsToNotify": "Emails To Notify",
-        "details": "Details"
+        "selectedRows": "{num} selected rows"
       }
     },
     "setupagione": {
@@ -2002,63 +1876,44 @@
         },
         "newBlock": "New Block",
         "updateBlock": "Update Block",
-        "block": "Block | Blocks",
-        "chooseBlock": "Choose a Block",
-        "layout": "Layout | Layouts",
-        "newLayout": "Create New Layout",
-        "layouts": "Layouts",
-        "blockEdit": "Block Edit",
-        "label": {
-          "grid": "Grid",
-          "preview": "Preview",
-          "chooseLayout": "Choose a layout",
-          "newLayout": "New Layout",
-          "updateLayout": "Update Layout",
-          "sureChangeLayout": "Do you want to change the layout?",
-          "descriptionSureChangeLayout": "You are going to change the layout, if you have unsaved changes they will be lost",
-          "blocks": "Blocks",
-          "localBlocks": "Locals",
-          "libraryBlocks": "Library",
-          "system": "System",
-          "sortPosition": "Sort Position",
-          "blockContent": "Block Content",
-          "title": "Title",
-          "subtitle": "Subtitle",
-          "bannerMessage": "Select a unique 'System Name' that identifies the block and then the component you want to customize...",
-          "content": "Content",
-          "attributes": "Attributes",
-          "discard": "Discard",
-          "apply": "Apply",
-          "editBlockAttributes": "Edit block attributes",
-          "sureDiscardBlock": "Have you saved your changes?",
-          "descriptionSureDiscardBlock": "If you continue with this action, you will lose all your progress. Take a moment to make sure!"
-        }
+        "block": "Block | Blocks"
       }
     },
-    "iqreable": {
+    "icertificate": {
       "cms": {
-        "label": {
-          "new": "New QR code",
-          "view": "View QR code",
-          "download": "Download QR code",
-          "update": "Update QR code",
-          "createQr": "Create a New QR Code",
-          "openMobile": "Open on mobile device",
-          "scanQrCodeWithCamera": "Scan the QR code using your mobile camera to access the link",
-          "openNewTab": "Open in new Tab"
+        "sidebar": {
+          "adminGroup": "Certificados",
+          "adminCustomers": "Clientes",
+          "adminCompanies": "Empresas",
+          "adminTrainingTypes": "Tipos de entrenamiento",
+          "adminTrainers": "Entrenadores",
+          "adminCourses": "Cursos",
+          "adminCertificates": "Certificados"
         },
         "form": {
-          "id": "ID",
-          "title": "Title",
-          "content": "Content",
-          "entityType": "Entity Type",
-          "entityId": "Entity Id",
-          "zone": "Zone",
-          "bannerInfo": "Prefixes make it easier to define the type of content contained in each QR code. Here are common examples you can use when entering your content:<br><br><li>Website URL: enter \"<b>http://</b>\" or \"<b>https://</b>\" followed by the Website URL. Example: \"<b>https://www.imaginacolombia.com\"</b></li><li>Email: enter \"<b>mailto:</b>\" followed by the Email. Example: \"<b>mailto:support@imaginacolombia.com</b>\"</li><li>Phone number: Enter \"<b>tel:</b>\" followed by the Phone number. Example: <b>tel:555-555-5555</b></li><li>Text Message (SMS)  With Pretyped Message and Number: Enter \"<b>sms:</b>\" Combine number \"<b>:</b>\" message. Example: <b>sms:555-555-5555:I am a pretyped message</b></li><li>Geo Address: Enter \"<b>geo:</b>\". Example: <b>geo:-78.400364,-85.916993</b></li><li>MeCard: Enter \"<b>mecard:</b>\". Example: <b>MECARD:Simple, Software;Some Address, Somewhere, 20430;TEL:555-555-5555;EMAIL:support@imaginacolombia.com</b></li>"
+          "idDocument": "Documento de Identidad",
+          "nit": "NIT",
+          "businessName": "Nombre de la empresa",
+          "fullName": "Nombre completo",
+          "position": "Cargo",
+          "standardDuration": "Duración estándar",
+          "trainer": "Entrenador",
+          "trainingType": "Tipo de entrenamiento",
+          "customer": "Cliente",
+          "company": "Empresa",
+          "course": "Curso"
         },
-        "messages": {
-          "sureCreateQr": "Do you want to generate a QR code for this record?"
-        }
+        "message": {
+          "invalidNIT": "El NIT no es válido."
+        },
+        "newCustomer": "Nuevo cliente",
+        "updateCustomer": "Actualizar cliente",
+        "newCompany": "Nueva empresa",
+        "updateCompany": "Actualizar empresa",
+        "newTrainingtype": "Nuevo tipo de entrenamiento",
+        "updateTrainingtype": "Actualizar tipo de entrenamiento",
+        "newTrainer": "Nuevo entrenador",
+        "updateTrainer": "Actualizar entrenador"
       }
     }
   },
@@ -2075,11 +1930,7 @@
           "noMessages": "No tienes mensajes..."
         },
         "newProvider": "Nuevo Proveedor",
-        "updateProvider": "Actualizar Proveedor",
-        "label": {
-          "resend": "Reenviar",
-          "sendMessage": "Envia un mensaje..."
-        }
+        "updateProvider": "Actualizar Proveedor"
       }
     },
     "ievent": {
@@ -2103,8 +1954,7 @@
           "adminConfig": {
             "title": "Configuración",
             "headerTitle": "Configuración de notificaciones"
-          },
-          "adminPanel": "Notificaciones"
+          }
         },
         "title": "Multimedia Listar/Buscar",
         "newFile": "Nuevo Archivo",
@@ -2129,20 +1979,7 @@
           "addYourImages": "Agrega tus imagenes aquí",
           "limitFiles": "Limite de Archivos",
           "messageLimitFiles": "El limite de archivos es de <b>{quantity}</b>. para seleccionar otro archivo primero debes quitar algunos de los seleccionados"
-        },
-        "markAsRead": "Marcar como leida",
-        "markAllAsRead": "Marcar como leidas",
-        "tab": {
-          "all": "Todas",
-          "unread": "Sin leer",
-          "read": "Leidas"
-        },
-        "type": "Tipo",
-        "cancel": "Cancelar",
-        "openLink": "Abrir enlace",
-        "helpTextBroadcastOption": "Está notificación se mostrara dentro de la APP",
-        "isImportant": "BroadCast (Importante)",
-        "isImportantHelpText": "Está notificación se mostrara en un popup más visible en el centro de la APP"
+        }
       }
     },
     "menu": {
@@ -2404,8 +2241,7 @@
         "updateCategory": "Actualizar Categoría",
         "label": {
           "tourElement": "ID del elemento",
-          "tourElementPosition": "Pocisión del Elemento",
-          "categoryView": "Vista de Categoría"
+          "tourElementPosition": "Pocisión del Elemento"
         },
         "activities": {
           "repeatAction": "Tour",
@@ -2422,18 +2258,8 @@
           "adminLead": "Lista de Lead",
           "designForm": "Diseño del formulario"
         },
-        "label": {
-          "parentForm": "Formulario padre",
-          "childForms": "Formularios hijos",
-          "dragFieldsHere": "Arrastra los campos aquí",
-          "addNewBlock": "Agregar nuevo bloque",
-          "emptyBlock": "Bloque vacio",
-          "editForm": "Editar formulario",
-          "openParentForm": "Abrir formulario padre"
-        },
         "newForm": "Nuevo Formulario",
         "updateForm": "Actualizar Formulario",
-        "fillForm": "Llenar Formulario",
         "newField": "Nuevo Campo",
         "updateField": "Actualizar Campo",
         "newBlock": "Nuevo Bloque",
@@ -2458,18 +2284,10 @@
             "full": "Full Ancho"
           },
           "successText": "Texto de exito",
-          "submitText": "Texto del Boton de envio"
+          "submitText": "Texto de enviado"
         },
         "message": {
-          "helpToOptionsField": "Escribe la opción y preciona enter...",
-          "tooltipInfoFormParent": "Los formularios hijos son formularios que se crear a partir de otros formularios (formularios padres).El formulario hijo puede tener tantos campos como el formulario padre, pero dentro del formulario hijo no se pueden crear nuevos campos.",
-          "descriptionChildrenForm": "Arrastra los campos que quieras de izquierda a derecha para agregarlos a los bloques del formulario.",
-          "descriptionParentForm": "Aquí puedes editar los bloques y los campos de el formulario. También puedes editar desde aquí información propia del formulario.",
-          "fieldEditingModalbanner": "Aquí podrás editar el campo pero con algunos valores restringidos debido a que es un campo heredado, los valores que ves bloqueados es porque deben ser iguales a como están definidos en el formulario padre, si deseas editar estos campos ve editar el formulario padre y allí podrás cambiar esos valores y automáticamente todos los campos hijos se actualizarán."
-        },
-        "feedBack": {
-          "newForm": "Enviar otra respuesta",
-          "message": "¡Todo listo!  Tu formulario ha sido enviado con éxito."
+          "helpToOptionsField": "Escribe la opción y preciona enter..."
         }
       }
     },
@@ -2765,8 +2583,7 @@
           "decimal_place": "Decimal",
           "value": "valor",
           "status": "Estado",
-          "default_currency": "Moneda predeterminada",
-          "warehouses": "Bodegas"
+          "default_currency": "Moneda predeterminada"
         },
         "newProduct": "Nuevo Producto",
         "updateProduct": "Actualizar Producto",
@@ -2815,8 +2632,6 @@
         "subtotal": "Total parcial",
         "shipping": "Envío",
         "orderHistory": "Historial de Orden",
-        "newWarehouse": "Nueva Bodega",
-        "updateWarehouse": "Editar Bodega",
         "form": {
           "formContent": "Aquí podrás encontrar la información relacionada al nombre, slug, resumen y descripción.",
           "statusContent": "Aquí podrás cambiar el estado de tu producto.",
@@ -2912,14 +2727,7 @@
           "symbolLeft": "Símbolo Izquierdo",
           "symbolRight": "Símbolo Derecho",
           "running": "Activo",
-          "finished": "Finalizado",
-          "mapHelp": "Busca la dirección o localíza la bodega en el mapa.",
-          "productWarehouse": "Bodegas",
-          "productWarehouseContent": "Selecciona las diferentes bodegas donde se encuentra ubicado tu producto.",
-          "generalWarehouse": "Bodega general",
-          "generalWarehouseHelp": "Puedes gestionar de manera eficiente la información detallada de cada producto, segmentada de acuerdo a las distintas bodegas. Así, puedes organizar y administrar de forma centralizada los datos específicos de tus productos en cada ubicación, simplificando la gestión de inventario y optimizando tu control operativo.",
-          "warehouseByOptions": "Bodega por Opcion",
-          "warehouseByOptionsHelp": "Te brindamos la capacidad de administrar de manera eficiente la información detallada de cada opción de producto, organizada según las distintas bodegas. Esto te permite centralizar la gestión de datos específicos para cada variante en cada ubicación, simplificando la administración del inventario y mejorando el control operativo de manera óptima."
+          "finished": "Finalizado"
         },
         "message": {
           "warnAddOpt": "Para agregar opciones, primero debe crear el producto",
@@ -2928,7 +2736,7 @@
           "selectProduct": "Seleccione una opción de producto",
           "warnAddDiscount": "Para agregar descuentos, primero debe crear el producto",
           "viewProduct": "Ver producto",
-          "advanceEdit": "Ir al formulario avanzado",
+          "advanceEdit": "Edición Avanzada",
           "quickEdit": "Edición Rapida",
           "btnAddProduct": "Agregar Producto",
           "chooseProduct": "Elegir Producto",
@@ -3043,7 +2851,6 @@
           "confirmPassword": "Confirmar contraseña",
           "changePassword": "Cambiar contraseña",
           "profile": "Perfil | Perfiles",
-          "profilePicture": "Foto de Perfil",
           "myProfile": "Mi perfil | Mis perfiles",
           "userGroup": "Grupo de usuario | Grupos de usuario",
           "registerAs": "Registrarme como",
@@ -3054,14 +2861,7 @@
           "lastLogin": "Ultima sesión",
           "defaultAddress": "Dirección por defecto",
           "documentType": "Tipo de documento",
-          "documentnumber": "Numero de documento",
-          "emailLogin": "Continuar con Email",
-          "sendEmailToVerify": "Hemos enviado un correo electrónico a <b>{email}</b> en donde encontrarás un enlace seguro para acceder. Por favor, verifica tu bandeja de entrada para acceder de manera segura.",
-          "introMessage": "Ingresa tu email, te enviaremos un link para conectarte de forma rápida y segura",
-          "checkYourEmail": "Comprueba tu correo electronico",
-          "notReceivedEmail": "¿No has recibido el correo electronico?",
-          "checkYourSpamFolder": "Comprueba la carpeta de correo no deseado.",
-          "resendEmail": "Volver a enviar correo electronico"
+          "documentnumber": "Numero de documento"
         },
         "message": {
           "emailExist": "El email ya está registrado",
@@ -3137,8 +2937,7 @@
           "writeComment": "Escriba un comentario..."
         },
         "newRule": "Nueva Regla",
-        "updateRule": "Actualizar Regla",
-        "newRequestedBy": "Nuevo Contacto"
+        "updateRule": "Actualizar Regla"
       }
     },
     "page": {
@@ -3183,8 +2982,7 @@
           "customers": "Clientes",
           "costCenters": "Centros de costo",
           "gates": "Lugares de estacionamiento",
-          "areas": "Areas",
-          "contracts": "Contratos"
+          "areas": "Areas"
         },
         "message": {}
       }
@@ -3203,17 +3001,13 @@
         "identifyYourReport": "Identifique su informe",
         "selectColumnsFilters": "Seleccionar columnas y filtros",
         "selectSortColumns": "Seleccionar y ordenar las columnas",
-        "selectColumns": "Seleccione las columnas",
-        "dragColumns": "Arrastra y reordena las columnas",
         "moveColumn": "Mover columna",
-        "selectFirst": "Selecciona los filtros",
-        "selectFirstSummary": "Elija los primeros ({total})* filtros que necesita para que este informe los utilice rápidamente.",
+        "selectFirst": "Selecciona el primer {total} filtros",
         "detailFilterOptions": "Detalla las opciones de filtro",
         "selectInfoYouWantToShowForEachFilter": "Seleccione la información que desea mostrar para cada filtro",
         "chooseColumnSorting": "Elija la clasificación de columnas",
         "adjustFollowingParameters": "¿Quieres programarlo? Ajuste los siguientes parámetros",
         "sort": "Ordenar",
-        "addAnotherEmail": "Agregar otro correo electrónico",
         "message": {
           "selectColumn": "Seleccione al menos una columna y un filtro para continuar",
           "waitMoment": "Espere un momento estamos cargando su reporte"
@@ -3233,32 +3027,6 @@
     },
     "isite": {
       "cms": {
-        "crudMySite": {
-          "information": {
-            "title": "Informacion del Sitio",
-            "description": "En esta sección, tienes la posibilidad de personalizar los detalles de tu sitio web. Aquí puedes actualizar elementos esenciales como el nombre de tu sitio, seleccionar la categoría que mejor lo representa, y redactar una descripción atractiva y precisa. Esta información es fundamental ya que ayuda a los visitantes a entender de qué trata tu página y qué pueden esperar de ella."
-          },
-          "socialNetworks": {
-            "title": "Redes Sociales",
-            "description": "Vincula tus perfiles de Facebook e Instagram, y proporcionar un número de WhatsApp. Estas conexiones facilitan que tus visitantes interactúen contigo en las plataformas que ya utilizan, permitiéndote construir una comunidad más fuerte alrededor de tu sitio web."
-          },
-          "media": {
-            "title": "Archivos Multimedia",
-            "description": "Aquí podrás añadir un logo para tu sitio web, y ayudar a tus clientes a indentificar tu marca con falicidad."
-          },
-          "colors": {
-            "title": "Colores",
-            "description": "La sección colores te permite personalizar la apariencia de tu sitio web para que coincida con tu marca. Aquí puedes seleccionar dos colores que se usarán como tema principal de tu página. Estos colores ayudarán a establecer la identidad visual de tu sitio, proporcionándole un aspecto único y consistente."
-          },
-          "schedule": {
-            "title": "Horarios de Atención",
-            "description": "Aquí puedes establecer las horas durante las cuales tu negocio está operativo. Esta información es esencial para tus clientes, ya que les permite saber cuándo pueden esperar servicios o respuestas a sus consultas."
-          },
-          "location": {
-            "title": "Localización",
-            "description": "Aquí tienes la posibilidad de compartir tu ubicación exacta con los visitantes de tu sitio web. Aquí puedes ingresar detalles como la provincia y la ciudad, así como la dirección exacta de tu oficina."
-          }
-        },
         "sidebar": {
           "pageHome": "Inicio",
           "pageConfig": "Configuración",
@@ -3305,8 +3073,7 @@
           "newExportHelpText": "Exportar <b class=\"text-blue-grey\">{pageTitle}</b> con los filtros actuales (sin paginación)",
           "newExportItemHelpText": "Exportar <b class=\"text-blue-grey\">Registro ID: {id}</b>",
           "exportReady": "Tu report <b>{fileName}</b> está listo!",
-          "noOrganization": "Todavía no perteneces a una organización",
-          "wantToCreateAChildForm": "¿Quieres crear un formulario hijo de"
+          "noOrganization": "Todavía no perteneces a una organización"
         },
         "startTime": "Hora de inicio",
         "endTime": "Hora de finalización",
@@ -3316,8 +3083,6 @@
         "perzonalizationTitle": "Bienvenid@ al editor de tu sitio web",
         "perzonalizationDescription": "De manera fácil, cambia el logo, colores y la información principal de tu página web",
         "label": {
-          "resposible": "Responsable",
-          "clickToAction": "Click para Acción",
           "top": "Arriba",
           "bottom": "Abajo",
           "left": "Izquierda",
@@ -3346,8 +3111,6 @@
           "content": "Contenido",
           "continueWith": "Continuar con",
           "facebook": "Facebook",
-          "instagram": "Instagram",
-          "youtube": "Youtube",
           "google": "Google",
           "microsoft": "Microsoft",
           "showing": "Mostrando",
@@ -3662,31 +3425,15 @@
           "endPoint": "Punto Final",
           "token": "Token",
           "refreshAtOnce": "Refrescar de una vez",
-          "refreshEveryMinutes": "Refrescar cada {min} minutos",
-          "start": "Empezar",
-          "continueUser": "Continuar con este Usuario",
-          "createNewAccount": "Crear Nueva Cuenta",
-          "continue": "Continuar",
-          "plan": "Plan",
-          "analytics": "Analytics",
-          "automationRules": "Reglas de automatizacións",
-          "copyEmbedHtml": "Copiar HTML",
-          "createChildForm": "Crear formulario hijo",
-          "copy": "Copiar",
-          "insert": "Insertar",
-          "phoneNumber": "Número de teléfono",
-          "quickLook": "Vistazo rápido"
+          "refreshEveryMinutes": "Refrescar cada {min} minutos"
         },
         "message": {
-          "showDemo": "Ver Demo",
-          "phoneHint": "Ingresa un número telefónico y presiona enter",
           "appOffline": "Has perdido la conexión a internet. La aplicación está offline.",
           "activitiesDescription": "Seleeciona la actividad que desees.",
           "descriptionHelpCenter": "Elige la opción que deseas para resolver tus dudas",
           "editFormProduct": "En este formulario podrás editar tu producto de manera sencilla, si quieres editar tu producto con opciones más avanzadas, da click en el siguiente botón para ir a el formulario avanzado.",
-          "createFormProduct": "¿Quieres ver las opciones avanzadas?",
+          "createFormProduct": "En este formulario podrás crear un nuevo producto de manera sencilla, si quieres crear tu producto con opciones más avanzadas, da click en el siguiente botón para ir a el formulario avanzado.",
           "notFound": "Lo sentimos, no hay nada aquí",
-          "noResultsFoundTryAnotherSearchValue": "No se han encontrado resultados, intenta con otro valor de busqueda...",
           "goToHome": "Volver al inicio",
           "deleteRecord": "¿Estás seguro que quieres eliminar este registro?",
           "formInvalid": "Faltan campos por completar, verifique el formulario",
@@ -3747,22 +3494,12 @@
           "finishRegister": "Falta poco para terminar tu registro",
           "ready": "Todo está listo",
           "noRegistered": "Aún no estás registrado",
-          "hintFilterByQuery": "Escribe 2 o más caracteres para buscar opciones",
+          "hintFilterByQuery": "Escribe 3 o más caracteres para buscar opciones",
           "invalidFormat": "Formato invalido",
           "specialCharactersAreNotAllowed": "No se permiten caracteres especiales",
-          "configureThisSection": "Configura esta sección",
-          "selectedCategory": "Categoría seleccionada",
-          "noCategories": "No existen categorías",
-          "selectedTemplate": "Plantilla seleccionada",
-          "noTemplates": "No existen plantillas",
-          "recordModalTitle": "¡Felicidades por completar el registro de tu cuenta!",
-          "recordModalMessage": "<p>Has dado el primer paso importante al registrarte, y ahora estamos listos para llevarte a  través de nuestro sencillo proceso para personalizar y crear el sitio web perfecto que refleje tu visión y objetivos.</p><p> ¡Bienvenid@ y adelante! 👋</p>",
-          "emailInvalid": "Correo invalido"
+          "configureThisSection": "Configura esta sección"
         },
         "form": {
-          "whatsappNumber": "Número de Whatsapp",
-          "codeCountry": "Código del Páis",
-          "defaultMessage": "Mensaje por defecto",
           "id": "ID",
           "title": "Título | Titulos",
           "caption": "Subtítulo | Subtítulos",
@@ -3877,8 +3614,7 @@
           "availableDate": "Disponible desde",
           "requestedBy": "Solicitado Por",
           "feature": "Característica | Características",
-          "fieldsDetails": "Detalles de la Característica",
-          "warehouse": "Bodega"
+          "fieldsDetails": "Detalles de la Característica"
         },
         "configList": {
           "loggedAs": "Registrado como",
@@ -3897,13 +3633,7 @@
         "bottomLeft": "Abajo-Izquierda",
         "bottom": "Abajo",
         "bottomRight": "Abajo-Derecha",
-        "selectedRows": "{num} Filas seleccionadas",
-        "reportQueue": "Ya tienes un reporte en progreso, lo solicitaste en <b>{date}</b>. Tan pronto este termine habilitaremos la función de 'crear' para ti... Esto lo hacemos para que la aplicación funcione mucho mejor!",
-        "sessionFound": "Hay una sesión activa",
-        "alreadyInUse": "¡Ups! Parece que el nombre que has elegido ya está en uso. ¿Podrías intentar seleccionar otro nombre? ¡Queremos asegurarnos de que tu identidad única brille con fuerza!",
-        "usersToNotify": "Usuarios a Notificar",
-        "emailsToNotify": "Emails a Notificiar",
-        "details": "Detalles"
+        "selectedRows": "{num} Filas seleccionadas"
       }
     },
     "setupagione": {
@@ -3926,63 +3656,44 @@
         "updateBlock": "Actualizar Bloque",
         "block": "Bloque | Bloques",
         "blockDesign": "Diseño del Bloque",
-        "chooseBlock": "Selecciona un bloque",
-        "chooseBlock": "Selecciona un Bloque",
-        "layout": "Layout | Layouts",
-        "newLayout": "Crea un nuevo Layout",
-        "layouts": "Layouts",
-        "blockEdit": "Editar bloque",
-        "label": {
-          "grid": "Grilla",
-          "preview": "Vista Previa",
-          "chooseLayout": "Escoge un Layout",
-          "newLayout": "Nuevo Layout",
-          "updateLayout": "Actualizar Layout",
-          "sureChangeLayout": "¿Deseas cambiar de layout?",
-          "descriptionSureChangeLayout": "Vas a cambiar de layout, si tienes cambios sin guardar se perderan",
-          "blocks": "Bloques",
-          "localBlocks": "Locales",
-          "libraryBlocks": "Libreria",
-          "system": "Sistema",
-          "sortPosition": "Posición en la Grilla",
-          "blockContent": "Contenido del Bloque",
-          "title": "Titulo",
-          "subtitle": "Subtitulo",
-          "bannerMessage": "Selecciona un 'Nombre de Sistema' unico que identifique el bloque y luego el componente que quieres perzonalizar...",
-          "content": "Contenido",
-          "attributes": "Atributos",
-          "discard": "Descartar",
-          "apply": "Aplicar",
-          "editBlockAttributes": "Editar los atributos del bloque",
-          "sureDiscardBlock": "¿Has guardado tus cambios?",
-          "descriptionSureDiscardBlock": "Si continuas con esta acción, perderás todo tu progreso. ¡Tómate un momento para asegurarte!"
-        }
+        "chooseBlock": "Selecciona un bloque"
       }
     },
-    "iqreable": {
+    "icertificate": {
       "cms": {
-        "label": {
-          "new": "Nuevo Codigo QR",
-          "view": "Ver codigo QR",
-          "download": "Descargar codigo QR",
-          "update": "Actualizar Codigo QR",
-          "createQr": "Genera un Codigo QR",
-          "openMobile": "Accede desde tu dispositivo móvil",
-          "scanQrCodeWithCamera": "Escanea el código QR con la cámara de tu móvil para abrir el enlace",
-          "openNewTab": "Abrir en una nueva pestaña"
+        "sidebar": {
+          "adminGroup": "Certificados",
+          "adminCustomers": "Clientes",
+          "adminCompanies": "Empresas",
+          "adminTrainingTypes": "Tipos de entrenamiento",
+          "adminTrainers": "Entrenadores",
+          "adminCourses": "Cursos",
+          "adminCertificates": "Certificados"
         },
         "form": {
-          "id": "ID",
-          "title": "Titulo",
-          "content": "Contenido",
-          "entityType": "Tipo de entidad",
-          "entityId": "Id de endiad ",
-          "zone": "Zona",
-          "bannerInfo": "Los prefijos facilitan la definición del tipo de contenido que contiene cada código QR. Aquí hay ejemplos comunes que puedes usar al ingresar tu contenido:<br><br><li>Dirección web: ingresa \"<b>http://</b>\" o \"<b>https://</b>\" seguido de la direccion web. Ejemplo: \"<b>https://www.imaginacolombia.com\"</b></li><li>Correo electrónico: ingresa \"<b>mailto:</b>\" seguido de la direccion de correo. Ejemplo: \"<b>mailto:support@imaginacolombia.com</b>\"</li><li>Número de teléfono: Ingresa \"<b>tel:</b>\" seguido del numero telefonico. Ejemplo: <b>tel:555-555-5555</b></li><li>Mensaje de texto (SMS) con mensaje y número predefinidos: Ingresa \"<b>sms:</b>\" Combina número \"<b>:</b>\" mensaje. Ejemplo: <b>sms:555-555-5555:yo soy el mensaje</b></li><li>Ubicacion geográfica: Ingresa \"<b>geo:</b>\". Ejemplo: <b>geo:-78.400364,-85.916993</b></li><li>Tarjeta MeCard: Ingresa \"<b>mecard:</b>\". Ejemplo: <b>MECARD:Simple, Software;Some Address, Somewhere, 20430;TEL:555-555-5555;EMAIL:support@imaginacolombia.com</b></li>"
-        },
-        "messages": {
-          "sureCreateQr": "¿Quieres generar un código QR para este registro?"
-        }
+          "idDocument": "Documento de Identidad",
+          "nit": "NIT", 
+          "businessName": "Nombre de la empresa",
+          "fullName": "Nombre Completo",
+          "position": "Posición",
+          "standardDuration": "Duración estándar",
+          "trainer": "Entrenador",
+          "trainingType": "Tipo de Entrenador",
+          "customer": "Cliente",
+          "company": "Empresa",
+          "course": "Curso"
+        }, 
+        "message": {
+          "invalidNIT": "El NIT no es válido."
+        },        
+        "newCustomer": "Nuevo Cliente",
+        "updateCustomer": "Actualizar Cliente",
+        "newCompany": "Nueva Empresa",
+        "updateCompany": "Actualizar Empresa",
+        "newTrainingtype": "Nuevo Tipo de entrenamiento",
+        "updateTrainingtype": "Actualizar Tipo de entrenamiento",
+        "newTrainer": "Nuevo Entrenador",
+        "updateTrainer": "Actualizar Entrenador"
       }
     }
   }
