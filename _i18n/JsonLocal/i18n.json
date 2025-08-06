@@ -3665,7 +3665,7 @@
           "adminGroup": "Certificados",
           "adminCustomers": "Clientes",
           "adminCompanies": "Empresas",
-          "adminTrainingTypes": "Tipos de entrenamiento",
+          "adminTrainingTypes": "Tipos de Entrenamiento",
           "adminTrainers": "Entrenadores",
           "adminCourses": "Cursos",
           "adminCertificates": "Certificados"
@@ -3675,7 +3675,7 @@
           "nit": "NIT", 
           "businessName": "Nombre de la empresa",
           "fullName": "Nombre Completo",
-          "position": "Posición",
+          "position": "Cargo",
           "standardDuration": "Duración estándar",
           "trainer": "Entrenador",
           "trainingType": "Tipo de Entrenador",
@@ -3690,8 +3690,8 @@
         "updateCustomer": "Actualizar Cliente",
         "newCompany": "Nueva Empresa",
         "updateCompany": "Actualizar Empresa",
-        "newTrainingtype": "Nuevo Tipo de entrenamiento",
-        "updateTrainingtype": "Actualizar Tipo de entrenamiento",
+        "newTrainingtype": "Nuevo Tipo de Entrenamiento",
+        "updateTrainingtype": "Actualizar Tipo de Entrenamiento",
         "newTrainer": "Nuevo Entrenador",
         "updateTrainer": "Actualizar Entrenador"
       }
